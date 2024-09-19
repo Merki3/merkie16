@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: gray; /* Default background color */
+    transition: background-color 0.5s; /* Smooth transition */
+}
+.background-text {
+    position: absolute;
+    top: 20%; /* Adjust this to position the text vertically */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px; /* Font size for the background text */
+    color: rgba(255, 255, 255, 0.5); /* Light color with transparency */
+    pointer-events: none; /* Allows clicks to go through */
+    text-align: center; /* Center the text */
+}
+.container {
+    position: relative;
+}
+
+.heart-button {
+    font-size: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: red;
+    transition: transform 0.2s;
+}
+
+.heart-button:hover {
+    transform: scale(1.2);
+}
+
+.letter {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 20px;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.letter-content {
+    text-align: center;
+}
